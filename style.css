@@ -1,0 +1,10 @@
+.game-board {
+  width: 600px;
+  height: 600px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px black solid ;
+}

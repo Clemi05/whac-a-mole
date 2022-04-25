@@ -1,10 +1,17 @@
 .game-board {
-  width: 600px;
-  height: 600px;
+  width: 606px;
+  height: 606px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .square {
   width: 200px;
   height: 200px;
   border: 1px black solid ;
+}
+
+.mole {
+  background-color: red;
 }

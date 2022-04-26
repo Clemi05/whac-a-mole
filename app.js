@@ -5,7 +5,7 @@ const score = document.querySelector('#score');
 
 let result = 0;
 let hitPosition;
-let currentTime = 10;
+let currentTime = 30;
 let timerId = null;
 
 function randomSquare() {
@@ -39,7 +39,7 @@ function countDown() {
   currentTime--;
   timeLeft.textContent = currentTime;
 
-  if (currentTime == 0) {
+  if (currentTime <= 0) {
     clearInterval(countDownTimerId);
     clearInterval(timerId);
     confirm(`GAME OVER! Your final score is ${result}`);
